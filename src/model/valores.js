@@ -5,6 +5,6 @@ const Valor = new Schema({
     idVaca: String,
     madre: String,
     padre: String,
-    fecha_nacimiento: Date
+    fecha_nacimiento: { type: Date, default: Date.now }
 });
 module.exports = mongoose.model('valores', Valor);
